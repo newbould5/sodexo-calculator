@@ -20,5 +20,5 @@ with open(file) as csvread:
 				break
 			amt = row[2][2:-4]
 			amount += float(amt)
-		hasRead = True
-print("Total amount: " + str(amount))  
+			hasRead = True
+print("Total amount: " + str(amount))
