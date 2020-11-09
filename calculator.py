@@ -18,7 +18,7 @@ with open(file) as csvread:
 				print("Last transaction is now: " + identifier + ", Remember this!")
 			if id == identifier:
 				break
-			amt = row[2][2:-4]
+			amt = row[2][2:-2]
 			amount += float(amt)
 			hasRead = True
-print("Total amount: " + str(amount))
+print("Total amount: " + format(amount,'.2f'))
